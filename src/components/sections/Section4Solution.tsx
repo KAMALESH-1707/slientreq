@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, Plane, Crosshair, Cpu, Wind, Layers } from 'lucide-react';
+import hybridVtolDrone from '../../assets/images/hybrid_vtol_drone_1790138117665.jpg';
 
 interface SectionProps {
   onNext: () => void;
@@ -145,7 +146,7 @@ export const Section4Solution: React.FC<SectionProps> = ({ onNext }) => {
           <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#17110F] border border-white/20 shadow-2xl">
             {/* Generated Hybrid VTOL UAV Drone Image */}
             <img
-              src="/src/assets/images/hybrid_vtol_drone_1790138117665.jpg"
+              src={hybridVtolDrone}
               alt="SilentResQ Hybrid VTOL Quadplane"
               className="w-full h-full object-cover brightness-105"
               referrerPolicy="no-referrer"

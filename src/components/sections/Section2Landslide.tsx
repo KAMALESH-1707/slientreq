@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, RotateCcw, AlertTriangle } from 'lucide-react';
+import mountainDebrisField from '../../assets/images/mountain_debris_field_1790138130634.jpg';
 
 interface SectionProps {
   onNext: () => void;
@@ -129,7 +130,7 @@ export const Section2Landslide: React.FC<SectionProps> = ({ onNext }) => {
           <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#220E08] border border-white/20 shadow-2xl">
             {/* Base Mountain Debris Photo */}
             <img
-              src="/src/assets/images/mountain_debris_field_1790138130634.jpg"
+              src={mountainDebrisField}
               alt="Landslide Debris"
               className="w-full h-full object-cover opacity-80"
               referrerPolicy="no-referrer"

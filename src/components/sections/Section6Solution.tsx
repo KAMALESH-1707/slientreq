@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Crosshair } from 'lucide-react';
 import { QuadplaneSVG } from '../uav/UavIllustrations';
+import silentresqQuadplaneExact from '../../assets/images/silentresq_quadplane_exact_1790139571100.jpg';
 
 interface SectionProps {
   onNext: () => void;
@@ -157,7 +158,7 @@ export const Section6Solution: React.FC<SectionProps> = ({ onNext }) => {
             {viewMode === 'photo' ? (
               <>
                 <img
-                  src="/src/assets/images/silentresq_quadplane_exact_1790139571100.jpg"
+                  src={silentresqQuadplaneExact}
                   alt="SilentResQ Fixed-Wing Hybrid VTOL Quadplane"
                   className="w-full h-full object-cover brightness-105"
                   referrerPolicy="no-referrer"

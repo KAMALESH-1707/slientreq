@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, MapPin, CheckCircle2, ShieldCheck } from 'lucide-react';
+import disasterMountainRoad from '../../assets/images/disaster_mountain_road_1790138100529.jpg';
 
 interface SectionProps {
   onNext: () => void;
@@ -93,7 +94,7 @@ export const Section9SurvivorLocation: React.FC<SectionProps> = ({ onNext }) => 
           <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#220E08] border border-white/20 shadow-2xl">
             {/* Background Mountain Debris Photo */}
             <img
-              src="/src/assets/images/disaster_mountain_road_1790138100529.jpg"
+              src={disasterMountainRoad}
               alt="Mountain Scene Target Lock"
               className="w-full h-full object-cover brightness-95"
               referrerPolicy="no-referrer"

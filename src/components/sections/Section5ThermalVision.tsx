@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, Sliders, Eye, Flame, CheckCircle2 } from 'lucide-react';
+import mountainDebrisField from '../../assets/images/mountain_debris_field_1790138130634.jpg';
 
 interface SectionProps {
   onNext: () => void;
@@ -120,7 +121,7 @@ export const Section5ThermalVision: React.FC<SectionProps> = ({ onNext }) => {
             {/* Base Under-Layer: Thermal IR False-Color View */}
             <div className="absolute inset-0 bg-[#0F0C1B]">
               <img
-                src="/src/assets/images/mountain_debris_field_1790138130634.jpg"
+                src={mountainDebrisField}
                 alt="Thermal Debris"
                 className="w-full h-full object-cover filter contrast-125 saturate-200 hue-rotate-180 brightness-75 opacity-70"
                 referrerPolicy="no-referrer"
@@ -160,7 +161,7 @@ export const Section5ThermalVision: React.FC<SectionProps> = ({ onNext }) => {
             >
               <div className="relative w-full h-full min-w-[500px]">
                 <img
-                  src="/src/assets/images/mountain_debris_field_1790138130634.jpg"
+                  src={mountainDebrisField}
                   alt="Optical RGB View"
                   className="w-full h-full object-cover"
                   style={{ width: '100%', height: '100%' }}
