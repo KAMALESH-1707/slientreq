@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Exact color palette sampled directly from reference image */
+    --canvas-bg: #F5A882;           /* The warm apricot/peach surround canvas */
+    --section-dark: #32160E;        /* The rich espresso/dark brown section (Kerry Media block) */
+    --section-light: #F7D4BE;       /* The warm cream/peach testimonial block */
+    --section-coral: #E65A33;       /* The saturated vermilion/coral-orange block (Rebels, Dreamers) */
+    --text-dark: #32160E;           /* Dark brown typography */
+    --text-light: #FDF9F5;          /* Crisp white/eggshell typography */
+    --accent-orange: #E65A33;       /* Bold orange callout text & markers */
+    --accent-line: rgba(255, 255, 255, 0.2); /* Hairline geometric borders */
+    
+    /* Semantic survivor green rule - explicitly preserved */
+    --survivor-green: #05DF72;
+    --survivor-green-glow: rgba(5, 223, 114, 0.45);
+  }
+
+  body {
+    background-color: var(--canvas-bg);
+    color: var(--text-dark);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.055em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* Master reference editorial headline hierarchy */
+.headline-hero {
+  font-family: 'Syne', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.84;
+  text-transform: uppercase;
+}
+
+.headline-section {
+  font-family: 'Syne', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 0.88;
+  text-transform: uppercase;
+}
+
+.headline-sub {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.eyebrow-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Reference image geometric hairline decorations */
+.geo-circle-line {
+  position: absolute;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  pointer-events: none;
+}
+
+.geo-quote-outline {
+  font-family: 'Syne', sans-serif;
+  -webkit-text-stroke: 1.5px rgba(230, 90, 51, 0.4);
+  color: transparent;
+}
+
+/* Animations */
+@keyframes loraPulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 0.3; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+@keyframes scanBeam {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+@keyframes survivorBeacon {
+  0% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(5, 223, 114, 0.7); }
+  70% { transform: scale(1.1); box-shadow: 0 0 0 16px rgba(5, 223, 114, 0); }
+  100% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(5, 223, 114, 0); }
+}
+
+.animate-survivor-beacon {
+  animation: survivorBeacon 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

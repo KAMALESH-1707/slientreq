@@ -1,0 +1,7 @@
+{
+  "name": "SilentResQ — Autonomous Disaster Response UAV",
+  "description": "Interactive cinematic editorial presentation prototype of the SilentResQ hybrid VTOL UAV disaster response system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
